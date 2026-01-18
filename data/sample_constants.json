@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Sample temperature sensor calibration constants",
+    "created_at": "2026-01-01T00:00:00",
+    "last_modified": "2026-01-01T00:00:00"
+  },
+  "constants": {
+    "temperature": {
+      "offset": {
+        "value": -0.5,
+        "unit": "°C",
+        "description": "Temperature sensor offset from reference",
+        "added_at": "2026-01-01T00:00:00"
+      },
+      "slope": {
+        "value": 1.002,
+        "unit": "dimensionless",
+        "description": "Temperature slope correction factor",
+        "added_at": "2026-01-01T00:00:00"
+      },
+      "reference_temp": {
+        "value": 20.0,
+        "unit": "°C",
+        "description": "Reference temperature for calibration",
+        "added_at": "2026-01-01T00:00:00"
+      }
+    },
+    "pressure": {
+      "atmospheric_pressure": {
+        "value": 101325.0,
+        "unit": "Pa",
+        "description": "Standard atmospheric pressure",
+        "added_at": "2026-01-01T00:00:00"
+      },
+      "sensor_offset": {
+        "value": 50.0,
+        "unit": "Pa",
+        "description": "Pressure sensor zero offset",
+        "added_at": "2026-01-01T00:00:00"
+      },
+      "scale_factor": {
+        "value": 1.005,
+        "unit": "dimensionless",
+        "description": "Pressure sensor scale factor",
+        "added_at": "2026-01-01T00:00:00"
+      }
+    },
+    "flow": {
+      "k_factor": {
+        "value": 450.0,
+        "unit": "pulses/L",
+        "description": "Flow meter K-factor from manufacturer calibration",
+        "added_at": "2026-01-01T00:00:00"
+      },
+      "offset": {
+        "value": 0.0,
+        "unit": "L/min",
+        "description": "Flow meter zero offset",
+        "added_at": "2026-01-01T00:00:00"
+      }
+    }
+  }
+}
