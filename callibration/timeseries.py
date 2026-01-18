@@ -116,10 +116,15 @@ class TimeSeriesCalibration:
         Returns:
             Dictionary representation of the timeseries
         """
+        # Convert data to records format with timestamps as strings
+        data_copy = self.data.copy()
+        if not data_copy.empty:
+            data_copy['timestamp'] = data_copy['timestamp'].dt.strftime('%Y-%m-%dT%H:%M:%S')
+        
         return {
             'name': self.name,
             'unit': self.unit,
-            'data': self.data.to_dict('records')
+            'data': data_copy.to_dict('records')
         }
     
     @classmethod
