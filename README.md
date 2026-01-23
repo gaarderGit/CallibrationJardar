@@ -51,3 +51,7 @@ uv run app_calibrate.py
 ```
 
 Once started, open app at http://127.0.0.1:8080.
+
+You should see something like this:
+
+![Sreenshot](screenshot.png)
