@@ -1,0 +1,33 @@
+[project]
+name = "calibrate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "dash",
+    "mysql-connector-python",
+    "numpy",
+    "plotly[express]",
+    "polars",
+    "python-dotenv",
+    "requests",
+    "scipy",
+    "xmltodict",
+]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN",    # Annotations
+    "COM819", # prohibited-trailing-comma, rec not use with formatter
+    "C408",   # Unnecessary-collection-call (dict(), list(), tuple())
+    "D",      # Docstrings
+    "ERA001", # Commented out code
+    "T201",   # Print statement
+    "T203",   # Pprint statement
+    "S608",   # hardcoded-sql-expression
+    "C901",   # too complex functions
+    "DTZ011", # timezone-aware date required
+]
+exclude = ["venv/", "env/", ".venv/", ".env/"]
